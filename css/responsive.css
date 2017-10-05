@@ -8,46 +8,56 @@ body {
         background-image: url(obrazy/man-1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         color: #FFFFFF;
         text-transform: uppercase;
         text-align: left;
         font-family: Verdana;
         margin: 0;
+        position: relative;
     }
     #header .header__h1 {
-        font-size: 16px;
-        padding-top: 50vh;
-        padding-left: 5vh;
+        font-size: 20px;
+        position: absolute;
+        top: 40%;
+        left: 2%;
         margin: 0;
     }
     #header .header__h2 {
-        font-size: 26px;
-        padding-left: 5vh;
+        font-size: 30px;
+        position: absolute;
+        top: 48%;
+        left: 2%;
         margin: 0;
     }
 }
 
-@media all and (max-width: 1170px) {
+@media all and (max-width: 1170px) and (min-width: 992px) {
     #header {
         height: 70vh;
         background-image: url(obrazy/man-2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         color: #FFFFFF;
         text-transform: uppercase;
         text-align: left;
         font-family: Verdana;
         margin: 0;
+        position: relative;
     }
-    #header .header__h1 {
-        font-size: 14px;
-        padding-top: 20vh;
-        padding-left: 75vh;
+    .header__h1 {
+        font-size: 20px;
+        position: absolute;
+        top: 15%;
+        left: 60%;
         margin: 0;
     }
-    #header .header__h2 {
-        font-size: 22px;
-        padding-left: 75vh;
+    .header__h2 {
+        font-size: 28px;
+        position: absolute;
+        top: 24%;
+        left: 60%;
         margin: 0;
     }
 }
@@ -58,20 +68,28 @@ body {
         background-image: url(obrazy/man-1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         color: #000000;
         text-transform: uppercase;
         font-family: Verdana;
         text-align: center;
         margin: 0;
+        position: relative;
     }
-    #header .header__h1 {
+    .header__h1 {
         font-size: 14px;
-        padding: 60vh 0 0 0;
+        position: absolute;
+        top: 120%;
+        right: 50%;
+        transform: translateX(50%);
         margin: 0;
     }
-    #header .header__h2 {
+    .header__h2 {
         font-size: 22px;
-        padding: 0;
+        position: absolute;
+        top: 130%;
+        right: 50%;
+        transform: translateX(50%);
         margin: 0;
     }
 }
